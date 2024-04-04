@@ -11,25 +11,29 @@ import { FormsModule } from '@angular/forms';
     imports: [HeaderMergedComponent,CommonModule,FormsModule]
 })
 export class ChangepasswordComponent {
+[x: string]: any;
     newPassword: string = ''; // newPassword variable is initialize
     confirmPassword: string = ''; // confirmpassword variable is initialize
-    passwordMatchError: boolean = false; // Variable to track password match error
+    // passwordMatchError: boolean = false; // Variable to track password match error
   
     onSubmit() {
       // Check the newPassword and confirmPassword match
       if (this.newPassword !== this.confirmPassword) {
-        // If passwords do not match
-        // set passwordMatchError to true
-        this.passwordMatchError = true;
-        return; // return the function
+        alert("Passwords do not match.");
+        return;
       }
+      else{
+      this.newPassword = '';
+      this.confirmPassword = '';
+      alert("Password successfully changed.");
+    }
   
       // its passwords match, continue with form submission and further logic
-      console.log('New Password:', this.newPassword);
-      console.log('Confirm Password:', this.confirmPassword);
+      // console.log('New Password:', this.newPassword);
+      // console.log('Confirm Password:', this.confirmPassword);
   
-      // Reset password  error
-      this.passwordMatchError = false;
+      // // Reset password  error
+      // this.passwordMatchError = false;
     }
   
 
