@@ -1,6 +1,7 @@
 <app-header-merged></app-header-merged>
 <div class="w-full lg:w-10/12 px-4 mx-auto mt-6">
-    <div class="relative flex flex-col min-w-0 w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 h-3/4 border-0 bg-gray-100">
+    <div
+        class="relative flex flex-col min-w-0 w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 h-3/4 border-0 bg-gray-100">
         <div class="rounded-t bg-gray-100 mb-0 px-6 py-6">
             <div class="flex flex-wrap">
                 <div class="w-full lg:w-1/5 px-6 mt-4">
@@ -46,58 +47,48 @@
                                         <td class="whitespace-nowrap px-6 py-4 font-balck">{{ student.rollNo }}</td>
                                         <td class="whitespace-nowrap px-6 py-4 items-center">{{ student.name }}</td>
                                         <td class="flex">
-                                            <button class="flex-shrink-0 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-lg mt-2">
+                                            <button
+                                                class="flex-shrink-0 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-lg mt-2">
                                                 View
                                             </button>
-                                            <!-- <button class="flex-shrink-0 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-lg mt-2 ml-3">
-                                                Remove
-                                            </button> -->
+                                            <!--  -->
                                             <div class="fixed inset-0 collapse z-50 w-full">
-                                                <input type="checkbox" id="signup" class="peer appearance-none collapse opacity-0">
+                                                <input type="checkbox" id="Remove"
+                                                    class="peer appearance-none collapse opacity-0">
                                                 <div
                                                     class="absolute bg-slate-800 bg-opacity-60 px-10 inset-0 w-full flex justify-center items-center invisible opacity-0 peer-checked:visible peer-checked:opacity-100 peer-checked:[&>*]:scale-100 transition-all">
                                                     <div
                                                         class="relative z-40 max-h-[calc(100vh-5em)] w-11/12 md:w-4/12 max-w-screen-md cursor-auto overflow-y-auto rounded-sm bg-white py-6 px-6 md:px-8 scale-90 md:scale-100 transition-all text-center rounded-lg">
-                                                        <!-- Adjusted width and reduced padding -->
-                                                        <!-- Button close pop-up -->
-                                                        <label for="signup"
+                                                        <label for="Remove"
                                                             class="group absolute top-5 right-5 cursor-pointer w-auto transition-all rounded-full">
-                                                            <svg class="h-4 w-auto group-hover:opacity-50 transition-all" width="40" height="48"
-                                                                viewBox="0 0 48 48" fill="none">
-                                                                <path d="M3 45L45 3" stroke="#1E293B" stroke-width="5" stroke-linecap="round"
-                                                                    stroke-linejoin="round" />
-                                                                <path d="M45 45L3 3" stroke="#1E293B" stroke-width="5" stroke-linecap="round"
-                                                                    stroke-linejoin="round" />
+                                                            <svg class="h-4 w-auto group-hover:opacity-50 transition-all"
+                                                                width="40" height="48" viewBox="0 0 48 48" fill="none">
+                                                                <path d="M3 45L45 3" stroke="#1E293B" stroke-width="5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M45 45L3 3" stroke="#1E293B" stroke-width="5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
                                                             </svg>
                                                         </label>
-                                                        <p class="text-lg md:text-2xl mb-4">Select Signup Mode For User</p>
-                                                        <div class="w-full flex justify-center items-center flex-row gap-4 flex-wrap">
-                                                            <a href="/signup">
-                                                                <div
-                                                                    class="bg-blue-300 hover:bg-blue-600 text-black font-bold py-2 px-4 border border-blue-700 rounded-full">
-                                                                    STUDENT</div>
-                                                            </a>
-                                                            <a href="/signup1">
-                                                                <div
-                                                                    class="bg-blue-300 hover:bg-blue-600 text-black font-bold py-2 px-4 border border-blue-700 rounded-full">
-                                                                    TEACHER</div>
-                                                            </a>
-                                                            <a href="/signup1">
-                                                                <div
-                                                                    class="bg-blue-300 hover:bg-blue-600 text-black font-bold py-2 px-4 border border-blue-700 rounded-full">
-                                                                    HOD</div>
-                                                            </a>
+                                                        <p class="text-lg md:text-2xl mb-4">Are You Want to Remove
+                                                        </p>
+                                                        <div
+                                                            class="w-full flex justify-center items-center flex-row gap-4 flex-wrap">
+                                                            <div
+                                                                class="bg-white-300 hover:bg-white-600 text-black font-bold py-2 px-4 border border-blue-700 rounded-full cursor-pointer">
+                                                                Cancel</div>
+
+
+                                                            <div
+                                                                class="bg-red-500 hover:bg-red-700 text-black font-bold py-2 px-4 border border-blue-700 rounded-full cursor-pointer">
+                                                                Remove</div>
+
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                        
-                                            <p class="text-sm font-light text-gray-500 dark:text-gray-400 text-center mt-4 rounded-full">
-                                                <!-- Adjusted margin and centered text -->
-                                                Don’t have an account yet?
-                                                <label for="signup"
-                                                    class="font-medium text-black-100 hover:underline dark:text-primary-500">Sign up</label>
-                                            </p>
+                                            <label for="Remove"
+                                                class="flex-shrink-0 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-lg mt-2 ml-3">Remove
+                                            </label>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -119,12 +110,47 @@
                                         <td class="whitespace-nowrap px-6 py-4 font-balck">{{ teacher.srNo }}</td>
                                         <td class="whitespace-nowrap px-6 py-4 items-center">{{ teacher.name }}</td>
                                         <td class="flex">
-                                            <button class="flex-shrink-0 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-lg mt-2">
+                                            <button
+                                                class="flex-shrink-0 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-lg mt-2">
                                                 View
                                             </button>
-                                            <button class="flex-shrink-0 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-lg mt-2 ml-3">
-                                                Remove
-                                            </button>
+                                            <div class="fixed inset-0 collapse z-50 w-full">
+                                                <input type="checkbox" id="Remove"
+                                                    class="peer appearance-none collapse opacity-0">
+                                                <div
+                                                    class="absolute bg-slate-800 bg-opacity-60 px-10 inset-0 w-full flex justify-center items-center invisible opacity-0 peer-checked:visible peer-checked:opacity-100 peer-checked:[&>*]:scale-100 transition-all">
+                                                    <div
+                                                        class="relative z-40 max-h-[calc(100vh-5em)] w-11/12 md:w-4/12 max-w-screen-md cursor-auto overflow-y-auto rounded-sm bg-white py-6 px-6 md:px-8 scale-90 md:scale-100 transition-all text-center rounded-lg">
+                                                        <label for="Remove"
+                                                            class="group absolute top-5 right-5 cursor-pointer w-auto transition-all rounded-full">
+                                                            <svg class="h-4 w-auto group-hover:opacity-50 transition-all"
+                                                                width="40" height="48" viewBox="0 0 48 48" fill="none">
+                                                                <path d="M3 45L45 3" stroke="#1E293B" stroke-width="5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                                <path d="M45 45L3 3" stroke="#1E293B" stroke-width="5"
+                                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                            </svg>
+                                                        </label>
+                                                        <p class="text-lg md:text-2xl mb-4">Are You Want to Remove
+                                                        </p>
+                                                        <div
+                                                            class="w-full flex justify-center items-center flex-row gap-4 flex-wrap">
+                                                            <div
+                                                                class="bg-white-300 hover:bg-white-600 text-black font-bold py-2 px-4 border border-blue-700 rounded-full cursor-pointer">
+                                                                Cancel</div>
+
+
+                                                            <div
+                                                                class="bg-red-500 hover:bg-red-700 text-black font-bold py-2 px-4 border border-blue-700 rounded-full cursor-pointer">
+                                                                Remove</div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <label for="Remove"
+                                                class="flex-shrink-0 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-blue-700 rounded-lg mt-2 ml-3">Remove
+                                            </label>
                                         </td>
                                     </tr>
                                 </tbody>
