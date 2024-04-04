@@ -41,7 +41,10 @@ export class SignupteacherComponent {
   }
 
   removeFields(index: number) {
-    this.fieldData.splice(index, 1); // Removes the fields at the specified index
+    if (this.fieldData.length > 1) {
+      this.fieldData.splice(index, 1);
+    }
+
   }
 
   //validation
